@@ -1,0 +1,38 @@
+
+while True:
+        print ("Olá, escreva abaixo o seu nome:")
+        nome = input()
+        print ("Bem vindo " + nome)
+        print ("Escolha abaixo a operação desejada:")
+        print("1 - Soma")
+        print("2 - Subtração")
+        print("3 - Multiplicação")
+        print("4 - Divisão")
+        print("0 - Sair")
+
+        opcao = int(input("Digite o número da operação desejada: "))
+
+        if opcao == 0:
+            break
+        elif opcao < 0 or opcao > 4:
+            print("Essa opção não existe")
+            continue
+
+        num1 = float(input("Digite o primeiro valor: "))
+        num2 = float(input("Digite o segundo valor: "))
+
+        if opcao == 1:
+            resultado = num1 + num2
+            print(f"Resultado: {resultado}")
+        elif opcao == 2:
+            resultado = num1 - num2
+            print(f"Resultado: {resultado}")
+        elif opcao == 3:
+            resultado = num1 * num2
+            print(f"Resultado: {resultado}")
+        elif opcao == 4:
+            if num2 != 0:
+                resultado = num1 / num2
+                print(f"Resultado: {resultado}")
+            else:
+                print("Não é possível dividir por zero")
