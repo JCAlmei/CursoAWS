@@ -1,29 +1,29 @@
+print ("\nOlá, escreva abaixo o seu nome:")
+nome = input()
+print (f"\nBem vindo {nome}!")
 
 while True:
-        print ("Olá, escreva abaixo o seu nome:")
-        nome = input()
-        print ("Bem vindo " + nome)
-        print ("Escolha abaixo a operação desejada:")
+
+        print ("\nEscolha abaixo, a operação desejada:")
         print("1 - Soma")
         print("2 - Subtração")
         print("3 - Multiplicação")
         print("4 - Divisão")
-        print("0 - Sair")
-
+        print("0 - Sair\n")
         opcao = int(input("Digite o número da operação desejada: "))
-
+        
         if opcao == 0:
+            print ("Até logo!")
             break
         elif opcao < 0 or opcao > 4:
-            print("Essa opção não existe")
+            print("Essa opção não existe.")
             continue
-
-        num1 = float(input("Digite o primeiro valor: "))
+        print ("\nVocê escolheu a opção: " + str(opcao))
+        num1 = float(input("\nDigite o primeiro valor: "))
         num2 = float(input("Digite o segundo valor: "))
-
         if opcao == 1:
             resultado = num1 + num2
-            print(f"Resultado: {resultado}")
+            print (f"Resultado: {resultado}")
         elif opcao == 2:
             resultado = num1 - num2
             print(f"Resultado: {resultado}")
